@@ -1,115 +1,92 @@
 *{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url(https://4kwallpapers.com/images/walls/thumbs_3t/19870.jpg);
-    min-height: 100vh;
-    background-size: cover;
-    background-position: center;
+html{
+    font-family: Arial, Helvetica, sans-serif;
 }
-/* change bakground */
-.select{
-    margin: 0;
-    padding: 10px 10px;
-    position: fixed;
-    top: 0px;
-    right: 0px;
+#main{
+
 }
-.select>p{
-    color: white;
+#header{
+    height: 46px;
+    background-color: black;
 }
-.wrapper{
-    width: 420px;
-    background: transparent;
-    color: white;
-    border-radius: 15px;
-    padding: 30px 40px;
-    border: 2px solid;
-    backdrop-filter: blur(5px);
-    box-shadow: 0 0 10px rgb(0,0,0,0.2);
+.nav{
+    display: inline-block;
 }
-.wrapper h1{
-    text-align: center;
-    font-size: 36px;
+.nav .down-more{
+    font-size: 14px;
 }
-.wrapper .input-box{
+.nav>li{
+    display: inline-block;
+}
+.nav li{
+    
     position: relative;
-    width: 100%;
-    height: 50px;
-    margin: 30px 0;
 }
-.input-box input{
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    border: 2px solid rgb(255,255,255,0.2);
-    border-radius: 50px;
-    font-size: 16px;
-    color: white;
-    padding: 20px 45px 20px 20px;
-}
-.input-box input::placeholder{
+.nav>li>a{
     color: white;
 }
-.input-box i{
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 20px;
-}
-.wrapper .remember-forgot{
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-    margin: -15px 0 15px;
-}
-.remember-forgot label input{
-    color: white;
-    margin-right: none;
-}
-.remember-forgot a{
-    color: white;
+.nav li a{
     text-decoration: none;
+    line-height: 46px;
+    padding: 0px 24px 0px 24px;
+    text-transform: uppercase;
 }
-.remember-forgot a:hover{
-    text-decoration: underline;
-}
-.wrapper .button{
-    width: 100%;
-    height: 45px;
-    background: white;
-    border: none;
+.nav>li:hover>a{
+    background-color: #ccc;
     color: black;
-    border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 600;
+    display: inline-block;
+    transition: 0.8s;
 }
-.wrapper .button:hover{
-    transition: 0.7s;
-    background: rgb(0, 107, 131);
-    color: aliceblue;
+.nav li:hover .subnav{
+    display: block;
 }
-.wrapper .register-link{
-    font-size: 14px;
-    text-align: center;
-    margin: 20px 0 15px;
+.nav .subnav{
+    display: none;
+    position: absolute;
+    background-color: #fff;
 }
-.wrapper .register-link p a{
-    color: white;
+#header,.subnav{
+    box-shadow: 0 0px 10px black;
+}
+.subnav>li{
+    display: block;
+}
+.subnav>li:hover>a{
+    background-color: #ccc;
+    color: black;
+    display: inline-block;
+    transition: 0.6s;
+}
+.nav .subnav li a{
+    color: black;
+    display: block;
+    
+}
+/* header-search */
+#header>.header-search{
+    
+    float: right;
+    
+}
+#header>.header-search a{
+    font-size: 24px;
     text-decoration: none;
-    font-weight: 600;
+    line-height: 46px;
+    padding: 0px 24px 0px 24px;
+    color: white;
 }
-.wrapper .register-link p a:hover{
-    text-decoration: underline;
+#header>.header-search:hover{
+    background-color: red;
+    transition: 0.8s;
+}
+#slider{
+}
+#conten{
+
+}
+#footer{
+
 }
